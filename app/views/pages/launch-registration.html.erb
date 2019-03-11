@@ -1,0 +1,26 @@
+<section class="hero is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-half"
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-info">
+              <p class="title">The more, the merrier</p>
+              <p class="subtitle desc is-size-5"> In 2016, Democrats lost the White House.<br>In 2018, Democrats won back the control of the House.</p>
+              <div class="content">
+                <!-- Content -->
+                <%= simple_form_for :page do |f| %>
+                    <% if alert %>
+                      <span class="has-text-warning has-text-weight-semibold"><%= alert %></span>
+                    <% end %>
+                  <%= f.text_field :email, placeholder: "your@email.com" %>
+                  <%= f.submit "Register for Launch", class: "button dark-blue is-medium" %>
+                <% end %>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
